@@ -84,7 +84,7 @@ class MyStocksTable extends Component {
       showContent = (
         <tr className="text-center">
           <td colSpan="7">
-            <strong>No Stocks have been selected</strong>
+            No Stocks have been selected
           </td>
         </tr>
       );
