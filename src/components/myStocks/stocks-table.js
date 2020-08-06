@@ -21,7 +21,7 @@ class MyStocksTable extends Component {
   // to set contents for the table
   setTableContents = () => {
     axios
-      .get("https://burger-app-8f654.firebaseio.com/addStock.json")
+      .get("https://financial-portfolio-trac-ec117.firebaseio.com/addstock.json")
       .then(res => {
       
         this.setState({
@@ -37,13 +37,13 @@ class MyStocksTable extends Component {
     event.preventDefault();
     const id = event.target.value;
     axios
-      .delete(`https://burger-app-8f654.firebaseio.com/addStock/${id}.json`)
+      .delete(`https://financial-portfolio-trac-ec117.firebaseio.com/addstock/${id}.json`)
       .catch(err => {
         console.log(err);
         alert("Network issue check  console for error.");
       });
 
-    axios.post(`https://burger-app-8f654.firebaseio.com/companyStock.json`, {
+    axios.post(`https://financial-portfolio-trac-ec117.firebaseio.com/mystock.json`, {
       name: this.state.tableData[id].name,
       symbol: this.state.tableData[id].symbol
     });

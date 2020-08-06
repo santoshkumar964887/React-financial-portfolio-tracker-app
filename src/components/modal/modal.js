@@ -34,7 +34,7 @@ class Modal extends Component{
         else{
   
             let profitLoss = (this.props.currentPrice-this.state.buy_price)*this.state.no_of_shares;
-            axios.post('https://burger-app-8f654.firebaseio.com/addStock.json',{
+            axios.post('https://financial-portfolio-trac-ec117.firebaseio.com/addstock.json',{
                 symbol: this.props.stockSymbol,
                 name: this.props.stockName ,
                 share: this.state.no_of_shares ,
@@ -45,7 +45,7 @@ class Modal extends Component{
             })
             
             console.log(this.props.stockKey);
-            axios.delete(`https://burger-app-8f654.firebaseio.com/companyStock/${this.props.stockKey}.json`);
+            axios.delete(`https://financial-portfolio-trac-ec117.firebaseio.com/mystock/${this.props.stockKey}.json`);
 
             
             let data={ 

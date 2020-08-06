@@ -8,7 +8,7 @@ class StockButton extends Component {
 
     this.state = {
       stock: null,
-      apiKey: "B2GITEYVXUDSZU15",
+      apiKey: "B73PI572A2PRPCCX",
       count: 0
     };
     this.selectStock = this.selectStock.bind(this);
@@ -27,7 +27,7 @@ class StockButton extends Component {
     var count = 0;
     // fetch stock names from firebase database
     axios
-      .get("https://burger-app-8f654.firebaseio.com/companyStock.json")
+      .get("https://financial-portfolio-trac-ec117.firebaseio.com/mystock.json")
       .then(res => {
         if (res.data !== null) {
           count = Object.keys(res.data).length;
