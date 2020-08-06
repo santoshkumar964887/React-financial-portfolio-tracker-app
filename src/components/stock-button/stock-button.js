@@ -82,13 +82,6 @@ class StockButton extends Component {
                 type="button"
                 id={i[0]}
                 name={i[1].name}
-                style={{
-                  backgroundColor: "#FF00FF",
-                  color: "white",
-                  height: "30px",
-                  textAlign: "center",
-                  paddingTop: "2px"
-                }}
                 className="StockButton"
                 onClick={this.selectStock}
                 value={i[1].symbol}

@@ -9,9 +9,15 @@ ul.buttonList{
     grid-row-gap: 30px;
 }
 
-button{
-    margin: 10px;
-    box-shadow: 3px 3px black;
-    padding: 20px;
-    border-radius: 10px;
+.StockButton{
+    background-color: rgb(2, 177, 2);
+    padding: 4px 25px;
+    border: 2px solid rgb(3, 77, 3);
+    box-shadow: none;
+    border-radius:5px;
+    
+}
+.StockButton:hover{
+    background-color: rgb(2, 70, 2);
+    color: white;
 }

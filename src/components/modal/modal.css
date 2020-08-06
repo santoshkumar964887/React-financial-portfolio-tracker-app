@@ -1,0 +1,36 @@
+.noShare{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+}
+::placeholder {
+    color:rgb(2, 177, 2);
+    opacity: 1; /* Firefox */
+  }
+.noShare:hover{
+    background-color:rgba(199, 255, 199, 0.75) ;
+}
+#addForm,#closeBtn{
+    background-color: rgb(2, 177, 2);
+    padding: 4px 25px;
+    border: none;
+    box-shadow: none;
+    border-radius:5px;
+    
+}
+#addForm:hover{
+    background-color: rgb(2, 70, 2);
+    color: white;
+}
+#closeBtn{
+    background-color: red;
+}
+#closeBtn:hover{
+    background-color: rgb(104, 5, 5);
+    color: white;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuetext]) {
+    color:rgb(2, 177, 2);
+    opacity: 1;
+  }

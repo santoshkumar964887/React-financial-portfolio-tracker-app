@@ -94,20 +94,20 @@ class Modal extends Component{
                         <form>
                             <label htmlFor='name'> <strong>Company Name</strong></label> : <strong>{this.props.stockName}</strong><br/><br/>
                             
-                            <label htmlFor="name"><strong>No. of Shares</strong></label> : <input id='noShares' type='number' placeholder='No. of Shares'
+                            <label htmlFor="name"><strong>No. of Shares</strong></label> : <input id='noShares' class='noShare' type='number' placeholder='No. of Shares'
                                     name='no_of_shares'   onChange={this.handleInput}></input>
                                 <br/><br/>
-                            <label htmlFor="name"><strong>Buy Price</strong></label> : <input type="number" id='buyPrice' placeholder='Buying Price'
+                            <label htmlFor="name"><strong>Buy Price</strong></label> : <input type="number" id='buyPrice' class='noShare' placeholder='Buying Price'
                                     name='buy-price'    onChange={this.handleInput}></input>
                                 <br/><br/>
-                            <label htmlFor="name"><strong>Buy Date</strong></label> : <input type='Date' id='buyDate' name='date'
+                            <label htmlFor="name"><strong>Buy Date</strong></label> : <input type='Date' id='buyDate' class='noShare' name='date'
                                     onChange={this.handleInput}></input>
                             <br/><br/>
                             
                         </form>
                        
-                        <button type='button' className='AddButton' style={{backgroundColor:"yellow",height:"10px",textAlign:"center",paddingTop:"2px"}} id='addForm' onClick={this.addStock}>Add</button>
-                       <button type="button" className='closeButton' style={{backgroundColor:"red",height:"10px",textAlign:"center",paddingTop:"2px",color:"white"}} id="closeBtn" onClick={this.closeModal}>Close</button><br/><br/>
+                        <button type='button' className='AddButtons' id='addForm' onClick={this.addStock}>Add</button>
+                       <button type="button"  id="closeBtn" onClick={this.closeModal}>Close</button><br/><br/>
                        <div id="errorMsg"></div>
                  </div>
             </div>

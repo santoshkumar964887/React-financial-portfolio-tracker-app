@@ -89,7 +89,7 @@ class Main extends Component {
       <div>
         <div className="container-fluid text-center" id="nav-bar">
           <h1>
-            <strong>Finance Portfolio Tracker</strong>
+            Finance Portfolio Tracker
           </h1>
         </div>
         <br />
