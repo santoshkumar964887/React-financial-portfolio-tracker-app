@@ -1,0 +1,17 @@
+ul.buttonList{
+    list-style: none;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 38%; */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+}
+
+button{
+    margin: 10px;
+    box-shadow: 3px 3px black;
+    padding: 20px;
+    border-radius: 10px;
+}

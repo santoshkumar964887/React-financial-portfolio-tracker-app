@@ -1,0 +1,10 @@
+div#nav-bar{
+    background-color: lime;
+}
+
+@media only screen and (max-width:500px){
+    #nav-bar{
+        width: 100%;
+    }
+    
+}
