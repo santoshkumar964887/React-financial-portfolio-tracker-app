@@ -69,13 +69,6 @@ class MyStocksTable extends Component {
                 <button
                   type="button"
                   className="StopTrackingBtn"
-                  style={{
-                    backgroundColor: "red",
-                    color: "white",
-                    height: "10px",
-                    textAlign: "center",
-                    paddingTop: "2px"
-                  }}
                   id="stopTrack"
                   value={item[0]}
                   onClick={this.stopTracking}

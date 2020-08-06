@@ -17,6 +17,7 @@
     border: none;
     box-shadow: none;
     border-radius:5px;
+    margin: 5px;
     
 }
 #addForm:hover{
